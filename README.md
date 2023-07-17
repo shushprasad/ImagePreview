@@ -30,6 +30,12 @@ To use the Dog Image Viewer library in your own Android project, follow these st
    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
 ## Implementation of Library into your Project
+
+Add Dependency you build.gradle file
+
+maven { url 'https://jitpack.io' } - settings.gradle
+implementation 'com.github.shushprasad:TestLibrary:1.0.0' - build.gradle
+
 1. Copy the ImageFetcher class into your project's source code.
 2. Create an instance of ImageFetcher in your activity or fragment.
 
