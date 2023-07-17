@@ -32,14 +32,14 @@ To use the Dog Image Viewer library in your own Android project, follow these st
 ## Implementation of Library into your Project
 
 Add Dependency you build.gradle file
-
+  ```groovy
 maven { url 'https://jitpack.io' } - settings.gradle
 implementation 'com.github.shushprasad:TestLibrary:1.0.0' - build.gradle
 
 1. Copy the ImageFetcher class into your project's source code.
 2. Create an instance of ImageFetcher in your activity or fragment.
    
-
+  ```groovy
 private lateinit var dogImageLibrary: ImageFetcher
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -52,7 +52,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 3. Use the library methods to fetch and display dog images. Here's an example of how to fetch and display 10 random dog images.
 
-
+  ```groovy
 lifecycleScope.launch {
     val images: List<String> = dogImageLibrary.getRandomDogImages(10) // Fetch 10 dog images
     dogImageLibrary.initialize(10) // Pass the number of images to initialize
