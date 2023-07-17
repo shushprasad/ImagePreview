@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImagePreview</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="enter_number_1_10">Enter number (1-10)</string>
+    <string name="submit">Submit</string>
+</resources>
